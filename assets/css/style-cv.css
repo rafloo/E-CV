@@ -1,0 +1,75 @@
+/*j'enleve les marges */
+
+body,html{
+  margin:0;
+  padding:0;
+}
+/*je nommes la police */
+
+body{
+  background-color:black;
+  font-family:sans-serif;
+}
+/*je centre le header */
+header{
+  display:flex;
+  margin-top:30px;
+  justify-content: center;
+
+}
+/*je positionne l'image*/
+header img {
+  display: block;
+}
+/*je positionne le menu*/
+#main-nav{
+  width:100%;
+  position:fixed;
+  top:250px;
+  left:0;
+  height:50px;
+  text-align: center;
+}
+
+#main-nav ul{
+  /*font-size:0;*/
+  margin:auto;
+}
+
+#main-nav>ul>li{
+  display:inline-block;
+  text-align:center;
+  font-size:1.5em;
+  width:15%;
+}
+
+#main-nav a{
+  display:block;
+  width:100%;
+  height:30px;
+  color:#BD2031;
+  text-align:center;
+  text-decoration:none;
+}
+
+#main-nav li a + *{
+  display: none;
+  position: absolute;
+}
+
+#main-nav li a:hover + *{
+  display: block;
+  list-style-type: none;
+}
+
+#main-nav li a + *:hover{
+  display: block;
+  list-style-type: none;
+}
+/*je positionne mon paragraphe de  presentation du site */
+p{
+  color: #BD2031;
+  display: inline-block;
+  position: relative;
+  top: 300px;
+}
