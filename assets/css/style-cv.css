@@ -12,23 +12,32 @@ body{
 }
 /*je centre le header */
 header{
+  z-index: 2;
+  background-color: black;
   display:flex;
-  margin-top:30px;
+  position: fixed;
+  height: 300px;
+  top: 0;
+  padding-top: 50px;
   justify-content: center;
+  width: 100%;
 
 }
 /*je positionne l'image*/
 header img {
+  background-color: black;
   display: block;
 }
 /*je positionne le menu*/
 #main-nav{
+  background-color: black;
   width:100%;
   position:fixed;
-  top:250px;
+  top:200px;
   left:0;
-  height:50px;
+  height:100px;
   text-align: center;
+  z-index: 2
 }
 
 #main-nav ul{
@@ -66,10 +75,61 @@ header img {
   display: block;
   list-style-type: none;
 }
+
+#main-nav a:hover{
+  color: white;
+}
+
 /*je positionne mon paragraphe de  presentation du site */
-p{
+
+.main1{
+  display: flex;
+  position: absolute;
+  top: 350px;
+  left: 12%;
+  width: 35%;
+  height: 25%;
+  border-right: 5px dotted white;
+}
+
+.main2{
+  display: block;
+  position: relative;
+  top: 800px;
+  left: 12%;
+  width: 35%;
+  height: 25%;
+  border-right: 5px dotted white;
+}
+
+.bienvenue{
+  font-size: 1.5em;
   color: #BD2031;
   display: inline-block;
   position: relative;
-  top: 300px;
+  margin-right: 10px;
+
+}
+
+.aside1{
+  display: flex;
+  position: absolute;
+  top: 600px;
+  right: 12%;
+  width: 35%;
+  height: 20%;
+  border-left: 5px dotted white;
+}
+
+.blank{
+  font-size: 1.1em;
+  color: #BD2031;
+  display: inline-block;
+  position: relative;
+  margin-left: 35px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
